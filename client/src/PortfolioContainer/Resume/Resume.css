@@ -129,7 +129,9 @@
   border-radius: 50%;
   background-color: #ff5823;
 }
-
+a{
+  color: #ff5823;
+}
 .resume-sub-heading {
   font-size: 14px;
   font-family: "Poppins SemiBold";

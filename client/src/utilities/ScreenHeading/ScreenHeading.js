@@ -6,6 +6,7 @@ export default function ScreenHeading(props) {
     <div className="heading-container">
       <div className="screen-heading">
         <span>{props.title}</span>
+        
       </div>
       
       {props.subHeading ? (

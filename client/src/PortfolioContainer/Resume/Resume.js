@@ -22,6 +22,7 @@ const Resume = (props) => {
         <div className="resume-main-heading">
           <div className="heading-bullet"></div>
           <span>{props.heading ? props.heading : ""}</span>
+          <a href={props.viewlink}>{props.name}</a>
           {props.fromDate && props.toDate ? (
             <div className="heading-date">
               {props.fromDate + "-" + props.toDate}
@@ -63,7 +64,8 @@ const Resume = (props) => {
   const projectsDetails = [
     { 
       title: "Personal Portfolio Website ",
-      link:"https://www.google.com",
+      link:"https://vinayak26.herokuapp.com",
+      name:"View",
       duration: { fromDate: "2021", toDate: "2022" },
       description:
         "A Personal Portfolio website to showcase all my details and projects at one place.",
@@ -71,6 +73,8 @@ const Resume = (props) => {
     },
     {
       title: "Responsive Weather App ",
+      link:"https://weatherappvm.netlify.app",
+      name:"View",
       duration: { fromDate: "2020", toDate: "2021" },
       description:
         "A Weather app that enables you make better preparation for the day in relation to giving accurate daily weather + 7 day forecast.",
@@ -137,6 +141,7 @@ const Resume = (props) => {
           key={index}
           heading={projectsDetails.title}
           viewlink={projectsDetails.link}
+          name = {projectsDetails.name}
           subHeading={projectsDetails.subHeading}
           description={projectsDetails.description}
           fromDate={projectsDetails.duration.fromDate}
