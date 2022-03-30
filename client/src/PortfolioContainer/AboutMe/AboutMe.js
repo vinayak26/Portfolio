@@ -43,7 +43,6 @@ export default function AboutMe(props) {
       <div className="about-me-parent">
         <ScreenHeading title={"About Me"} subHeading={"Why Choose Me?"} />
         <div className="about-me-card">
-          <div className="about-me-profile"></div>
           <div className="about-me-details">
             <span className="about-me-description">
               {SCREEN_CONSTSANTS.description}

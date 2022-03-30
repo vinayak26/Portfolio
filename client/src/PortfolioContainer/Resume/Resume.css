@@ -106,7 +106,7 @@
 
 .resume-main-heading {
   position: relative;
-  display: flex;
+  display:flex;
   justify-content: space-between;
 }
 
@@ -186,6 +186,15 @@ a{
   font-size: 16px;
   color: #ff5823;
 }
+
+.view-link {
+  text-decoration:none;
+  margin-right: 20%;
+}
+.view-link:hover{
+  text-decoration: underline;
+}
+
 
 @media only screen and (max-width: 1110px) {
   .resume-card {

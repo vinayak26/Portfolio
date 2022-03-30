@@ -22,7 +22,7 @@ const Resume = (props) => {
         <div className="resume-main-heading">
           <div className="heading-bullet"></div>
           <span>{props.heading ? props.heading : ""}</span>
-          <a href={props.viewlink}>{props.name}</a>
+          <a className="view-link" href={props.viewlink}>{props.name}</a>
           {props.fromDate && props.toDate ? (
             <div className="heading-date">
               {props.fromDate + "-" + props.toDate}
@@ -86,7 +86,7 @@ const Resume = (props) => {
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
       <ResumeHeading      
-        heading={"B Tech IN COMPUTER SCIENCE & INFORMATION TECHNOLOGY"}
+        heading={"B Tech in Computer Science & IT"}
         subHeading={"Meerut Institue of Engineering and Technology"}
         fromDate={"2019"}
         toDate={"2023"}
